@@ -1,0 +1,90 @@
+.skills {
+  padding: 6rem 2rem;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+}
+
+.bentoItem {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform var(--duration);
+}
+
+.bentoItem:hover {
+  border-color: var(--primary);
+}
+
+.icon {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.bentoItem h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.bentoItem p {
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTags span {
+  font-size: 0.75rem;
+  background: var(--muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+/* تعریف اندازه‌های مختلف برای Bento */
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.medium {
+  grid-column: span 2;
+}
+
+.small {
+  grid-column: span 1;
+}
+
+/* ریسپانسیو کردن */
+@media (max-width: 900px) {
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .large, .medium, .small {
+    grid-column: span 2;
+  }
+}
