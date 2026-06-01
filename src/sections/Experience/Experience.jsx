@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Experience.module.css';
+import { Reveal } from '../../components/Reveal';
 
 const EXPERIENCE_DATA = [
   {
@@ -18,6 +19,7 @@ const EXPERIENCE_DATA = [
 
 const Experience = () => {
   return (
+    <Reveal>
     <section id="experience" className={styles.experience}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Experience</h2>
@@ -38,6 +40,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 };
 

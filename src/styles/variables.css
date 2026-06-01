@@ -1,35 +1,23 @@
 :root {
-  /* Background & Foreground */
   --background: #ffffff;
   --foreground: #020817;
-
-  /* Primary Colors */
   --primary: #0f172a;
   --primary-foreground: #f8fafc;
-
-  /* Muted / Secondary colors */
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
-  
-  /* Border colors */
   --border: #e2e8f0;
-  
-  /* Fonts */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-
-  /* Transitions */
-  --duration: 0.2s;
+  --nav-bg: rgba(255, 255, 255, 0.8); /* متغیر جدید برای نویگیشن */
 }
 
-/* Dark mode (اختیاری برای آینده، اما ساختارش را الان می‌گذاریم) */
 [data-theme='dark'] {
   --background: #020817;
   --foreground: #f8fafc;
   --primary: #f8fafc;
-  --primary-foreground: #0f172a;
+  --primary-foreground: #020817;
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
   --border: #1e293b;
+  --nav-bg: rgba(2, 8, 23, 0.8); /* رنگ تیره با شفافیت برای نویگیشن */
 }
 
 * {

@@ -3,7 +3,11 @@
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  background: radial-gradient(circle at 50% 50%, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: radial-gradient(
+    circle at 50% 50%, 
+    var(--muted) 0%, 
+    var(--background) 100%
+  );
 }
 
 .container {

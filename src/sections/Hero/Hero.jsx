@@ -6,9 +6,11 @@ import { FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi'; // از مجموعه HeroIcons
 
 import styles from './Hero.module.css';
+import { Reveal } from '../../components/Reveal';
 
 const Hero = () => {
   return (
+    <Reveal>
     <section className={styles.hero}>
       <div className={styles.container}>
         <h1 className={styles.title}>
@@ -36,6 +38,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 };
 

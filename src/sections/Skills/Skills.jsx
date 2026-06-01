@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './Skills.module.css';
 // از آیکون‌هایی که مطمئنی داری استفاده کن
 import { Code2, Brain, Terminal, Cpu } from 'lucide-react'; 
+import { Reveal } from '../../components/Reveal';
 
 const Skills = () => {
   return (
+    <Reveal>
     <section id="skills" className={styles.skills}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Technical Expertise</h2>
@@ -50,6 +52,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 };
 

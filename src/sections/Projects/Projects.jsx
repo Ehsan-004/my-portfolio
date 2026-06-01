@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import ProjectCard from './ProjectCard';
+import { Reveal } from '../../components/Reveal';
 
 const PROJECTS_DATA = [
   {
@@ -43,11 +44,13 @@ const Projects = () => {
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Featured Projects</h2>
+      <Reveal>
         <div className={styles.grid}>
           {PROJECTS_DATA.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+      </Reveal>
       </div>
     </section>
   );

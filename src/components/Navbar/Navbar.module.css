@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--nav-bg); /* استفاده از متغیر به جای رنگ ثابت */
   backdrop-filter: blur(8px); /* افکت شیشه‌ای مدرن */
   z-index: 1000;
 }
@@ -19,6 +19,19 @@
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  color: var(--foreground);
+  padding: 8px;
+  border-radius: 50%;
+  transition: background var(--duration);
+}
+
+.themeToggle:hover {
+  background-color: var(--muted);
 }
 
 .logo {
