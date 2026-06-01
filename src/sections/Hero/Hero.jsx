@@ -1,5 +1,10 @@
 import React from 'react';
 import { GitBranch, GitCommitHorizontalIcon, Link, Mail } from 'lucide-react'; // وارد کردن آیکون‌ها
+
+import { SiGithub, SiLinkerd } from 'react-icons/si'; // از مجموعه SimpleIcons
+import { FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi'; // از مجموعه HeroIcons
+
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -19,10 +24,10 @@ const Hero = () => {
           <a href="#projects" className={styles.primaryBtn}>View Projects</a>
           <div className={styles.socials}>
             <a href="https://github.com/your-username" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <GitBranch size={24} />
+              <SiGithub size={24} />
             </a>
             <a href="https://linkedin.com/in/your-username" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-              <Link size={24} />
+              <FaLinkedin size={24} />
             </a>
             <a href="mailto:your-email@example.com" aria-label="Email">
               <Mail size={24} />
