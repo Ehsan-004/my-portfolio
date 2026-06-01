@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  // تغییر مقدار اولیه از light به dark
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   useEffect(() => {
     const root = window.document.documentElement;

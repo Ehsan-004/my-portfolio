@@ -19,11 +19,10 @@ const Footer = () => {
           </div>
           
           <div className={styles.bottomBar}>
-            <p className={styles.copyright}>© {new Date().getFullYear()} YourName. All rights reserved.</p>
-            <div className={styles.socials}>
-              <a href="#"><SiGithub /></a>
-              <a href="#"><FaLinkedin /></a>
-            </div>
+            <p>© {new Date().getFullYear()} Handcrafted by Me</p>
+            <a href="لینک_گیت‌هاب_پروژه" target="_blank" className={styles.sourceLink}>
+              View Source Code
+            </a>
           </div>
         </div>
       </div>

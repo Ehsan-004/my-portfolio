@@ -6,53 +6,53 @@ import { Reveal } from '../../components/Reveal';
 
 const Skills = () => {
   return (
-    <Reveal>
     <section id="skills" className={styles.skills}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Technical Expertise</h2>
         
-        <div className={styles.bentoGrid}>
-          {/* باکس بزرگ: AI & Computer Vision */}
-          <div className={`${styles.bentoItem} ${styles.large}`}>
-            <Brain className={styles.icon} size={32} />
-            <h3>AI & Computer Vision</h3>
-            <p>Specialized in object detection, image segmentation, and neural network optimization.</p>
-            <div className={styles.skillTags}>
-              <span>PyTorch</span> <span>OpenCV</span> <span>YOLO</span> <span>TensorFlow</span>
+        <Reveal>
+          <div className={styles.bentoGrid}>
+            {/* باکس بزرگ: AI & Computer Vision */}
+            <div className={`${styles.bentoItem} ${styles.large}`}>
+              <Brain className={styles.icon} size={32} />
+              <h3>AI & Computer Vision</h3>
+              <p>Specialized in object detection, image segmentation, and neural network optimization.</p>
+              <div className={styles.skillTags}>
+                <span>PyTorch</span> <span>OpenCV</span> <span>YOLO</span> <span>TensorFlow</span>
+              </div>
             </div>
-          </div>
 
-          {/* باکس متوسط: Frontend Development */}
-          <div className={`${styles.bentoItem} ${styles.medium}`}>
-            <Code2 className={styles.icon} size={32} />
-            <h3>Frontend Dev</h3>
-            <p>Building responsive, high-performance web apps with modern React.</p>
-            <div className={styles.skillTags}>
-              <span>React</span> <span>JavaScript</span> <span>Vite</span> <span>CSS Modules</span>
+            {/* باکس متوسط: Frontend Development */}
+            <div className={`${styles.bentoItem} ${styles.medium}`}>
+              <Code2 className={styles.icon} size={32} />
+              <h3>Frontend Dev</h3>
+              <p>Building responsive, high-performance web apps with modern React.</p>
+              <div className={styles.skillTags}>
+                <span>React</span> <span>JavaScript</span> <span>Vite</span> <span>CSS Modules</span>
+              </div>
             </div>
-          </div>
 
-          {/* باکس کوچک: Tools */}
-          <div className={`${styles.bentoItem} ${styles.small}`}>
-            <Terminal className={styles.icon} size={28} />
-            <h3>Tools</h3>
-            <div className={styles.skillTags}>
-              <span>Git</span> <span>Docker</span> <span>Linux</span>
+            {/* باکس کوچک: Tools */}
+            <div className={`${styles.bentoItem} ${styles.small}`}>
+              <Terminal className={styles.icon} size={28} />
+              <h3>Tools</h3>
+              <div className={styles.skillTags}>
+                <span>Git</span> <span>Docker</span> <span>Linux</span>
+              </div>
             </div>
-          </div>
 
-          {/* باکس کوچک: Hardware/Edge */}
-          <div className={`${styles.bentoItem} ${styles.small}`}>
-            <Cpu className={styles.icon} size={28} />
-            <h3>Edge AI</h3>
-            <div className={styles.skillTags}>
-              <span>NVIDIA Jetson</span> <span>ONNX</span>
+            {/* باکس کوچک: Hardware/Edge */}
+            <div className={`${styles.bentoItem} ${styles.small}`}>
+              <Cpu className={styles.icon} size={28} />
+              <h3>Edge AI</h3>
+              <div className={styles.skillTags}>
+                <span>NVIDIA Jetson</span> <span>ONNX</span>
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
-    </Reveal>
   );
 };
 

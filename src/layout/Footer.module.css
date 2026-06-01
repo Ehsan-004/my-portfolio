@@ -55,3 +55,17 @@
 .socials a:hover {
   color: var(--primary);
 }
+
+.sourceLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.techStack {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}

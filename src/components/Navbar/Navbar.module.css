@@ -18,8 +18,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  align-items: center; /* تراز عمودی */
+  padding: 0 1.5rem;
 }
+
 
 .themeToggle {
   display: flex;
@@ -57,4 +59,24 @@
 
 .navLinks a:hover {
   color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 0.9rem; /* کوچک کردن اسم */
+    white-space: nowrap;
+  }
+
+  .navLinks {
+    gap: 0.8rem; /* کم کردن فاصله لینک‌ها */
+  }
+
+  .navLinks li:nth-child(1), 
+  .navLinks li:nth-child(2) { 
+    /* اگر باز هم جا نشد، می‌توانیم برخی لینک‌ها را در موبایل مخفی کنیم */
+  }
 }
