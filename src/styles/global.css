@@ -19,6 +19,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی در کل سایت */
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -49,4 +60,19 @@ button {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-foreground);
+}
+
+main {
+  /* به اندازه ارتفاع هدر (64px) فاصله از بالا ایجاد می‌کنیم */
+  padding-top: 64px; 
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 64px; 
+  }
+}
+
+section {
+  scroll-margin-top: 80px; /* کمی بیشتر از ارتفاع هدر */
 }

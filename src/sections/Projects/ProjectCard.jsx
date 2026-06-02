@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
-        <h3 className={styles.projectTitle}>{project.title}</h3>
+        <a><h3 className={styles.projectTitle}>{project.title}</h3></a>
         <div className={styles.projectLinks}>
           <a href={project.github} target="_blank" rel="noreferrer"><GitBranch size={18} /></a>
           <a href={project.link} target="_blank" rel="noreferrer"><ExternalLink size={18} /></a>

@@ -1,5 +1,5 @@
 .hero {
-  min-height: 85vh;
+  min-height: calc(90vh - 64px); 
   display: flex;
   align-items: center;
   padding: 0 2rem;
@@ -41,10 +41,8 @@
   box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
 }
 
-
-
 .title {
-  font-size: clamp(2.5rem, 8vw, 4.5rem); /* سایز متن با اندازه صفحه تغییر می‌کند */
+  font-size: clamp(2.3rem, 7vw, 4.5rem); /* سایز متن با اندازه صفحه تغییر می‌کند */
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -71,7 +69,10 @@
 
 .actions {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem; /* کمی کمتر از قبل */
+  margin-top: 2rem;
+  flex-wrap: wrap; /* حیاتی: اگر جا نشد برود خط بعد */
 }
 
 .primaryBtn {
@@ -108,9 +109,14 @@
   margin-top: 1rem;
 }
 
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
 .socials {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   align-items: center;
 }
 
@@ -125,12 +131,37 @@
   color: var(--primary); /* در هنگام هاور آیکون تیره می‌شود */
 }
 
-@media (max-width: 900px) {
-  .visualContent {
-    display: none;
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 1rem; /* پدینگ کمتر برای فضای بیشتر */
+    text-align: center; /* در موبایل وسط‌چین شیک‌تر است */
   }
+
   .container {
     flex-direction: column;
-    text-align: left;
+    gap: 3rem;
+  }
+
+  .actions {
+    flex-direction: column; /* دکمه‌ها روی هم بیفتند */
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center; /* وسط‌چین کردن دکمه‌ها در موبایل */
+  }
+
+  .primaryBtn, .secondaryBtn {
+    width: 100%; /* دکمه‌ها کل عرض را بگیرند (استاندارد موبایل) */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem; /* جلوگیری از بزرگ شدن بیش از حد فونت */
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
   }
 }

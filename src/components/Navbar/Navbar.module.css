@@ -65,18 +65,20 @@
   .container {
     padding: 0 1rem;
   }
-  
-  .logo {
-    font-size: 0.9rem; /* کوچک کردن اسم */
-    white-space: nowrap;
-  }
 
   .navLinks {
-    gap: 0.8rem; /* کم کردن فاصله لینک‌ها */
+    gap: 0.5rem; /* فاصله بسیار کم برای موبایل */
   }
 
-  .navLinks li:nth-child(1), 
-  .navLinks li:nth-child(2) { 
-    /* اگر باز هم جا نشد، می‌توانیم برخی لینک‌ها را در موبایل مخفی کنیم */
+  .navLinks a {
+    font-size: 0.75rem; /* فونت کوچکتر */
+  }
+
+  .logo {
+    font-size: 0.85rem;
+  }
+  
+  .themeToggle {
+    padding: 4px; /* فضای کمتر */
   }
 }

@@ -26,8 +26,10 @@ const Hero = () => {
 
           <Reveal>
             <div className={styles.actions}>
-              <a href="#projects" className={styles.primaryBtn}>View Projects</a>
-              <a href="/resume.pdf" download className={styles.secondaryBtn}>Download CV</a>
+              <div className={styles.buttonGroup}> {/* یک دیو جدید دور دکمه‌ها */}
+                <a href="#projects" className={styles.primaryBtn}>View Projects</a>
+                <a href="/resume.pdf" download className={styles.secondaryBtn}>Download CV</a>
+              </div>
               <div className={styles.socials}>
                 <a href="#"><SiGithub size={24} /></a>
                 <a href="#"><FaLinkedin size={24} /></a>
