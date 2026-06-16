@@ -16,9 +16,9 @@ const Skills = () => {
             <div className={`${styles.bentoItem} ${styles.large}`}>
               <Brain className={styles.icon} size={32} />
               <h3>AI & Computer Vision</h3>
-              <p>Specialized in object detection, image segmentation, and neural network optimization.</p>
+              <p>Specialized in computer vision and neural network optimization.</p>
               <div className={styles.skillTags}>
-                <span>PyTorch</span> <span>OpenCV</span> <span>YOLO</span> <span>TensorFlow</span>
+                <span>PyTorch</span> <span>OpenCV</span> <span>YOLO</span> <span>DeepStream</span>
               </div>
             </div>
 
@@ -26,9 +26,9 @@ const Skills = () => {
             <div className={`${styles.bentoItem} ${styles.medium}`}>
               <Code2 className={styles.icon} size={32} />
               <h3>Frontend Dev</h3>
-              <p>Building responsive, high-performance web apps with modern React.</p>
+              <p>Building high-performance web apps with modern React.</p>
               <div className={styles.skillTags}>
-                <span>React</span> <span>JavaScript</span> <span>Vite</span> <span>CSS Modules</span>
+                <span>React</span> <span>JavaScript</span> <span>HTML</span> <span>CSS</span>
               </div>
             </div>
 

@@ -10,7 +10,7 @@ export default  function Navbar ()  {
     return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <div className={styles.logo}>YourName.dev</div>
+        <div className={styles.logo}>Ehsan Kholoosi</div>
         <ul className={styles.navLinks}>
           <li><a href="#projects">Projects</a></li>
 
