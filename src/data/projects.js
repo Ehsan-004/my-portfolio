@@ -1,6 +1,6 @@
 export const CATEGORIES = [
+    { id: 'Front', title: 'Frontend Development' },
     { id: 'AI', title: 'AI & Computer Vision' },
-    { id: 'Front', title: 'Frontend Development' }
 ];
 
 
@@ -43,6 +43,15 @@ export const PROJECTS_DATA = [
     },
     {
         id: 5,
+        title: "Formaloo",
+        category: "Front",
+        description: "Dynamic Responsive form creating web application with authentication system",
+        tags: ["react", "HTML", "CSS", "react-router", "Redux"],
+        // link: "https://mirbagheri-sohan-site.vercel.app/",
+        github: "https://github.com/Ehsan-004/formaloo"
+    },
+    {
+        id: 6,
         title: "Paper Trail",
         category: "Front",
         description: "Dynamic Todo application featuring task creation, status tracking, and analytical summaries.",
@@ -51,7 +60,7 @@ export const PROJECTS_DATA = [
         github: "https://github.com/Ehsan-004/paper-train"
     },
     {
-        id: 6,
+        id: 7,
         title: "Joft-O-Joor",
         category: "Front",
         description: "A Card-Pair matching game",
