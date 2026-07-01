@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 export const Reveal = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }} // حالت شروع: نامرئی و کمی پایین‌تر
-      whileInView={{ opacity: 1, y: 0 }} // حالت هنگام مشاهده: مرئی و در جای اصلی
-      viewport={{ once: true }} // فقط یکبار انیمیشن اجرا شود
-      transition={{ duration: 0.6, ease: "easeOut" }} // سرعت و نوع حرکت
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {children}
     </motion.div>

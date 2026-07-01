@@ -3,7 +3,7 @@ import { SiGithub, SiTelegram } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import styles from './Hero.module.css';
-import { Reveal } from '../../components/Reveal'; // اضافه کردن انیمیشن
+import { Reveal } from '../../components/Reveal';
 import { FiPhone } from 'react-icons/fi';
 
 

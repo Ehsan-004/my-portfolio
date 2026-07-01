@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import { useDarkMode } from '../../hooks/useDarkMode';
-import { Sun, Moon } from 'lucide-react'; // یا از react-icons
+import { Sun, Moon } from 'lucide-react';
 
 
 export default  function Navbar ()  {

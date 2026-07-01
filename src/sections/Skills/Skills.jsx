@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Skills.module.css';
-// از آیکون‌هایی که مطمئنی داری استفاده کن
 import { Code2, Brain, Terminal, Cpu } from 'lucide-react'; 
 import { Reveal } from '../../components/Reveal';
 
